@@ -14,27 +14,27 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <12 11>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        japanese {
+            bindings = <&kp LS(LA(LG(J)))>;
+            key-positions = <18 19>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        english {
+            bindings = <&kp LS(LA(LG(K)))>;
+            key-positions = <19 20>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <38 39>;
         };
     };
 
@@ -56,6 +56,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        scroll_with_rotary_encoder: scroll_with_rotary_encoder {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "SCROLL_WITH_ROTARY_ENCODER";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
     };
 
     keymap {
@@ -63,13 +70,13 @@
 
         DEFAULT {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R  &kp T                                                &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F  &kp G      &kp PRINTSCREEN        &kp SQT            &kp H        &kp J  &kp K      &kp L    &lt 2 MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B      &kp LS(LG(LC(K)))      &kp LS(LC(LG(J)))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mo 5  &kp SPACE  &kp BACKSPACE          &lt 3 ESCAPE       &lt 4 ENTER                             &kp RCTRL
+&kp Q             &kp W         &kp E         &kp R  &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F  &kp G      &kp PRINTSCREEN        &kp SQT     &kp H        &kp J  &kp K      &kp L    &lt 2 MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B      &kp LS(LG(LC(K)))      &kp ESCAPE  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mo 5  &kp SPACE  &kp BACKSPACE          &mo 3       &lt 4 ENTER                             &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_with_rotary_encoder SCRL_UP SCRL_DOWN>;
         };
 
         MOUSE {
