@@ -23,12 +23,12 @@
         };
 
         japanese {
-            bindings = <&kp LS(LA(LG(J)))>;
+            bindings = <&kp LS(LG(LC(J)))>;
             key-positions = <18 19>;
         };
 
         english {
-            bindings = <&kp LS(LA(LG(K)))>;
+            bindings = <&kp LS(LG(LC(K)))>;
             key-positions = <19 20>;
         };
 
