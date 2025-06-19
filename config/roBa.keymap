@@ -15,26 +15,31 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <12 13>;
+            layers = <0>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <12 11>;
+            layers = <0>;
         };
 
         japanese {
             bindings = <&kp LS(LG(LC(J)))>;
             key-positions = <18 19>;
+            layers = <0>;
         };
 
         english {
             bindings = <&kp LS(LG(LC(K)))>;
             key-positions = <19 20>;
+            layers = <0>;
         };
 
         delete {
             bindings = <&kp DELETE>;
             key-positions = <38 39>;
+            layers = <0 3 4>;
         };
     };
 
