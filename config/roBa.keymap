@@ -94,13 +94,13 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mo 5  &kp SPACE  &kp BACKSPACE                &mo 3       &lt 4 ENTER                             &kp RCTRL
             >;
 
-            sensor-bindings = <&scroll_with_rotary_encoder SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&scroll_with_rotary_encoder MOVE_Y(5) MOVE_Y(-5)>;
         };
 
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mo 2
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &mkp MB5  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
