@@ -18,13 +18,13 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <12 13>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <12 11>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         japanese {
@@ -42,18 +42,18 @@
         delete {
             bindings = <&kp DELETE>;
             key-positions = <38 39>;
-            layers = <0 3 4>;
+            layers = <0 3 4 1>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <31 32>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         check-keyid {
             bindings = <&none>;
-            key-positions = <34 18 19 20 30 31 37>;
+            key-positions = <34 18 19 20 30 31 38>;
         };
     };
 
