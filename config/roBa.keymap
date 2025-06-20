@@ -65,6 +65,11 @@
             key-positions = <31 32>;
             layers = <0>;
         };
+
+        check-keyid {
+            bindings = <&none>;
+            key-positions = <34 18 19 20 30 31 37>;
+        };
     };
 
     macros {
