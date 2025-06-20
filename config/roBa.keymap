@@ -15,28 +15,16 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
+        japanese {
+            bindings = <&kp LS(LC(LG(J)))>;
             key-positions = <12 13>;
             layers = <0 1>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
+        english {
+            bindings = <&kp LS(LC(LG(K)))>;
             key-positions = <12 11>;
             layers = <0 1>;
-        };
-
-        japanese {
-            bindings = <&kp LS(LG(LC(J)))>;
-            key-positions = <18 19>;
-            layers = <0>;
-        };
-
-        english {
-            bindings = <&kp LS(LG(LC(K)))>;
-            key-positions = <19 20>;
-            layers = <0>;
         };
 
         delete {
@@ -53,7 +41,7 @@
 
         check-keyid {
             bindings = <&none>;
-            key-positions = <34 18 19 20 30 31 38>;
+            key-positions = <34 18 19 20 30 31 37 42>;
         };
     };
 
@@ -118,10 +106,10 @@
 
         SYMBOL {
             bindings = <
-&kp EXCLAMATION           &kp AT_SIGN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp POUND                             &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
-&kp DOLLAR                &kp PERCENT   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET  &trans          &kp GRAVE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp EQUAL
-&mt LEFT_SHIFT AMPERSAND  &kp ASTERISK  &kp LESS_THAN         &kp GREATER_THAN       &kp TILDE  &trans          &trans     &none           &none           &none         &none            &kp BACKSLASH
-&trans                    &trans        &trans                &kp TAB                &trans     &kp DELETE      &trans     &trans                                                         &trans
+&kp EXCLAMATION  &kp AT_SIGN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp POUND                             &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
+&kp DOLLAR       &kp PERCENT   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET  &trans          &kp GRAVE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp EQUAL
+&kp AMPERSAND    &kp ASTERISK  &kp LESS_THAN         &kp GREATER_THAN       &kp TILDE  &trans          &trans     &none           &none           &none         &none            &kp BACKSLASH
+&trans           &trans        &trans                &kp LEFT_SHIFT         &kp TAB    &kp DELETE      &trans     &trans                                                         &trans
             >;
         };
 
