@@ -43,6 +43,12 @@
             bindings = <&none>;
             key-positions = <34 18 19 20 30 31 37 42>;
         };
+
+        shift-tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <37 38>;
+            layers = <3>;
+        };
     };
 
     macros {
