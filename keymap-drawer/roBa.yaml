@@ -365,8 +365,6 @@ combos:
 - p: [31, 32]
   k: ;
   l: [DEFAULT, MOUSE]
-- p: [34, 18, 19, 20, 30, 31, 37, 42]
-  k: ''
 - p: [37, 38]
   k: Sft+TAB
   l: [SYMBOL]
