@@ -57,11 +57,6 @@
             layers = <0 1>;
         };
 
-        check-keyid {
-            bindings = <&none>;
-            key-positions = <34 18 19 20 30 31 37 42>;
-        };
-
         shift-tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <37 38>;
