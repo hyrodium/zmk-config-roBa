@@ -60,6 +60,11 @@
             key-positions = <37 38>;
             layers = <3>;
         };
+
+        MORE_nu {
+            bindings = <&mo 5>;
+            key-positions = <40 41>;
+        };
     };
 
     macros {
